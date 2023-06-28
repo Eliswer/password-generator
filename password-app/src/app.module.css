@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap");
+
 html,
 body {
   height: 100%;
@@ -5,20 +7,149 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(86, 86, 147);
+  font-family: "Pathway Extreme", sans-serif;
 }
 
 .wrapper {
-  padding: 20px;
+  overflow: hidden;
   height: 60vh;
-  width: 40vw;
+  width: 30vw;
   border: 1px solid black;
   color: black;
-  background-color: var(--platinum);
+  background-color: rgb(220, 220, 220);
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+
+.settings,
+.password {
+  width: 100%;
+}
+
+.password {
+  background-color: rgb(152, 190, 216);
+  height: 40%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+.display-pass:disabled {
+  margin-top: 20px;
+  width: 80%;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.display-pass:focus {
+  outline: none;
+}
+
+.btnwrapper {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+
+.btnwrapper button {
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.btnwrapper button:hover {
+  cursor: pointer;
+}
+
+.copy {
+  width: 60px;
+  background-color: rgb(77, 77, 255);
+}
+
+.regenerate {
+  width: 100px;
+  margin-left: 10px;
+  background-color: rgb(144, 144, 255);
+}
+
+.settings {
+  height: 60%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-wrapper {
+  width: 80%;
+  display: flex;
+  align-items: baseline;
+  align-items: center;
+}
+
+.input-wrapper input {
+  margin: 0;
+  height: 20px;
+  width: 20px;
+}
+
+.input-wrapper label {
+  margin-left: 5px;
+  font-size: 1.2vw;
+}
+
+.input-wrapper-range {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  border-bottom: 1px solid black;
+}
+
+.input-wrapper-range input {
+  width: 100%;
+  margin: 0;
+}
+
+.input-wrapper-range label {
+  align-items: baseline;
+  width: 100%;
+  font-size: 1.2vw;
+}
+
+footer {
+  height: 35px;
+  width: 100%;
+  display: flex;
+  background-color: rgb(152, 190, 216);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  height: 20px;
+  width: 20px;
+}
+
+footer a {
+  outline: none;
+  color: black;
+  text-decoration: none;
+  margin-left: 5px;
+  font-size: 12px;
 }
