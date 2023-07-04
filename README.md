@@ -7,12 +7,12 @@ Strong password generator
 # How to set up:
 Install packages:
 ```bash
+ cd .\password-app\
+```
+```bash
 npm install
 ```
 Start the server:
-```bash
- cd .\password-app\
-```
 ```bash
 npm start
 ```
