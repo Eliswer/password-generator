@@ -5,10 +5,14 @@ Strong password generator
   1. React
 
 # How to set up:
-Start the server:
+Install packages:
 ```bash
  cd .\password-app\
 ```
+```bash
+npm install
+```
+Start the server:
 ```bash
 npm start
 ```
