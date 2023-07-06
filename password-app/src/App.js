@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import classes from "./app.module.css";
+import copy from "copy-to-clipboard";
 
 import github from "./imgs/25231.png";
 
@@ -83,7 +84,10 @@ function App() {
     setPassword(displayArray.join(""));
   }, [amount, clicked]);
 
-  console.log(displayArray, password);
+  const copyToClipboard = () => {
+    copy(password);
+    alert("Your password has been copied !");
+  };
 
   return (
     <div className={classes.app}>
@@ -95,7 +99,9 @@ function App() {
             value={password || ""}
           ></input>
           <div className={classes.btnwrapper}>
-            <button className={classes.copy}>Copy</button>
+            <button className={classes.copy} onClick={copyToClipboard}>
+              Copy
+            </button>
             <button
               className={classes.regenerate}
               onClick={() => {
